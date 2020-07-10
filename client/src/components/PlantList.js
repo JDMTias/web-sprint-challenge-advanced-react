@@ -2,6 +2,28 @@ import React, { Component } from "react";
 import axios from "axios";
 
 export default class PlantList extends Component {
+
+  constructor() {
+    super();
+    this.state = {
+      plants:[]
+    }
+    console.log('Constructor works')
+  }
+
+  componentDidMount(){
+    console.log('cdm is run')
+
+    axios.get( `http://localhost:3333/plants`)
+    .then(res => {
+      const plants = res.data.plantsData
+      console.log(plants)
+      this.setState({
+        plants: plants
+      })
+    })
+
+  }
   // add state with a property called "plants" - initialize as an empty array
 
   // when the component mounts:

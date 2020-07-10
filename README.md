@@ -29,13 +29,14 @@ Commit your code regularly and meaningfully. This helps both you (in case you ev
 Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. You might prepare by writing down your own answers before hand.
 
 1. Explain how to build stateful class components.
+    classComponent  extends React.component, the add the contructor and the super we need these, then set state, then the render and a return
 
-2. Describe the different phases of the component lifecycle.
-
+2. Describe the different phases of the component lifecycle. 
+    mounting-constructor then render, react updates DOM and Refs ComponentDidmount, then Updating it will take whatever has changed and only update that portion of the dom, then we want to get rid of some event listeners to avoid memory leak so we do component unmount. 
 3. Demonstrate an understanding of class component lifecycle methods.
 
 4. Define stateful logic.
-
+  Any code that uses state
 5. Describe how to test a React component with React Testing Library.
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade.
@@ -61,15 +62,15 @@ _Please follow the setup instructions closely so that you can get everything up 
 
 **Starting the server**
 
-- [ ] Run `npm install` to download dependencies for the server.
-- [ ] Run the server using `npm start`.
-- [ ] Open a new browser tab and navigate to `http://localhost:3333/plants` - if you see a JSON object with plants data, then you know the server is running 👍
+- [x] Run `npm install` to download dependencies for the server.
+- [x] Run the server using `npm start`.
+- [x] Open a new browser tab and navigate to `http://localhost:3333/plants` - if you see a JSON object with plants data, then you know the server is running 👍
 
 **Starting the React app**
 
-- [ ] In a separate terminal cd into the `client` folder and run `npm install` to download dependencies.
-- [ ] Still inside the `client` folder run `npm run start` to run the client application.
-- [ ] Your browser should open up the project as normal
+- [x] In a separate terminal cd into the `client` folder and run `npm install` to download dependencies.
+- [x] Still inside the `client` folder run `npm run start` to run the client application.
+- [x] Your browser should open up the project as normal
 
 **Starting your test runner**
 
